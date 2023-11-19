@@ -2,7 +2,8 @@
 
 Build an end-to-end pipeline to copy data from the on-premises SQL Server to Azure blob storage using ADF.
 
-![Project Image](https://github.com/Rakesh-Pawar/Azure-Data-Enginering-Project-/assets/112051343/5dae21fc-8ca9-44a3-a703-f936721ba773)
+![image](https://github.com/Rakesh-Pawar/Azure-Data-Enginering-Project/assets/112051343/4160242f-9d3b-4da9-9603-9aae02c99372)
+
 
 ## Table of Contents
 
