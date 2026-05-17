@@ -13,18 +13,32 @@ steps:
 - checkout: self
   persistCredentials: true
   clean: true
+  fetchDepth: 0
 
-- script: |
+- bash: |
+    set -e
+
     git config --global user.email "rpms627@gmail.com"
     git config --global user.name "Rakesh Pawar"
 
-    # Make sure we are on main
-    git checkout main
+    echo "Build.SourceBranch=$(Build.SourceBranch)"
+    echo "Build.SourceBranchName=$(Build.SourceBranchName)"
 
-    # Add Azure Repos as target remote
+    git fetch --all
+
+    BRANCH_NAME="$(Build.SourceBranchName)"
+
+    if git show-ref --verify --quiet "refs/heads/$BRANCH_NAME"; then
+      git checkout "$BRANCH_NAME"
+    else
+      git checkout -b "$BRANCH_NAME"
+    fi
+
     git remote remove azure 2>/dev/null || true
-    git remote add azure https://$(AZURE_DEVOPS_PAT)@dev.azure.com/MyDataMigrationOrg/Migration_SqlServer_to_ADLS/_git/Azure-Data-Enginering-Project
+    git remote add azure "https://dev.azure.com/MyDataMigrationOrg/Migration_SqlServer_to_ADLS/_git/Azure-Data-Enginering-Project"
 
-    # Push GitHub main to Azure Repos main
-    git push azure main --force
+    git -c http.extraheader="AUTHORIZATION: Basic $(printf ':%s' "$AZURE_DEVOPS_PAT" | base64 -w 0)" \
+      push azure "HEAD:refs/heads/$BRANCH_NAME" --force
   displayName: 'Mirror GitHub to Azure Repos'
+  env:
+    AZURE_DEVOPS_PAT: $(AZURE_DEVOPS_PAT)
