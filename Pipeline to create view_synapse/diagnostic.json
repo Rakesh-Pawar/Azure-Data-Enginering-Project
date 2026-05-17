@@ -1,0 +1,22 @@
+{
+    "now": "2023-10-30T13:08:17.770Z",
+    "perfNow": 12675216.5,
+    "diagnosticCorrelation": "953c3ea8-62f0-4654-99a8-9542ae64ac78",
+    "source": "DownloadSupportFiles",
+    "environment": {
+        "productName": "a365",
+        "buildVersion": "23.1016.18",
+        "environmentType": 9,
+        "resourceName": "synpaseforproject",
+        "resourceRegion": "australiaeast",
+        "resourceGroup": "rakeshRG",
+        "subscriptionId": "e9a64eb6-b750-4b80-a4de-2370402e7d70",
+        "sessionId": "yKBU4",
+        "operationId": "IMF5m",
+        "gitType": "live"
+    },
+    "additionalInfo": {
+        "selectedResource": "Pipeline to create view",
+        "selectedResourceType": "pipeline"
+    }
+}
