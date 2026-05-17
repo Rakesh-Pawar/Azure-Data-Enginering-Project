@@ -1,0 +1,6 @@
+selected resource name:		Pipeline to create view
+selected resource type:		pipeline
+workspace name:			synpaseforproject
+workspace location:		australiaeast
+subscription id:		e9a64eb6-b750-4b80-a4de-2370402e7d70
+time of download (UTC):		Mon, 30 Oct 2023 13:25:08 GMT

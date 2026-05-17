@@ -1,0 +1,6 @@
+selected resource name:		copyAllTables
+selected resource type:		pipeline
+factory name:			OnPreSQLADF
+factory location:		eastus2
+subscription id:		e9a64eb6-b750-4b80-a4de-2370402e7d70
+time of download (UTC):		Mon, 30 Oct 2023 13:22:46 GMT

@@ -1,0 +1,18 @@
+{
+    "name": "goldTables",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "synpaseforproject-WorkspaceDefaultStorage",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "Binary",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "folderPath": "SalesLT",
+                "fileSystem": "gold"
+            }
+        }
+    }
+}

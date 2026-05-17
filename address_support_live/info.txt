@@ -1,0 +1,6 @@
+selected resource name:		address
+selected resource type:		dataset
+factory name:			OnPreSQLADF
+factory location:		eastus2
+subscription id:		e9a64eb6-b750-4b80-a4de-2370402e7d70
+time of download (UTC):		Sun, 29 Oct 2023 19:11:08 GMT
