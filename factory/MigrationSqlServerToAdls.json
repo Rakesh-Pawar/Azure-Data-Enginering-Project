@@ -1,0 +1,15 @@
+{
+	"name": "MigrationSqlServerToAdls",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cb49efc2-9e11-441b-a39d-de82de7b4efc",
+		"tenantId": "35f94153-32a2-483a-b894-8aecd45a6f1a"
+	}
+}
